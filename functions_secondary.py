@@ -28,8 +28,16 @@
 #   10° celsius is 50° fahrenheit
 #
 # WRITE CODE BELOW
+def f_to_c(f):
+    print(f, 'degrees fahrenheit is', (f - 32) * (5/9), 'degrees celsius')
 
+f_to_c(72)
 
+def c_to_f(c):
+    print(c, 'degrees celsius is', (c * 9/5) + 32, 'degrees fahrenheit')
+
+c_to_f(29)
+print()
 # 2 | Celsius to Kelvin
 #
 # There is another unit of measurement, called kelvin. It is closely related to celsius. In fact to convert an equation
@@ -51,6 +59,14 @@
 #   232° kelvin is -41.15° celsius
 #
 # WRITE CODE BELOW
+def c_to_k(c):
+    print(c, 'degrees celsius is', c + 273.15, 'degrees kelvin')
+c_to_k(6)
 
+def k_to_c(k):
+    print(k, 'degrees kelvin is', k - 273.15, 'degrees celsius')
+
+k_to_c(90)
 
 # Question: How could you use these functions to convert a temperature in fahrenheit to kelvin?
+#You could use these functions to convert fahrenheit to kelvin by converting the fahrenheit temperature to celsius, with the functions, and then converting the celsius temperature to kelvin. 

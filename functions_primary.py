@@ -1,5 +1,5 @@
-# author:
-# date:
+# author: Lyric Marner
+# date: July 8, 2021
 
 
 # --------------- Section 1 --------------- #
@@ -25,8 +25,13 @@
 # 1 is done for you.
 
 print('The absolute value of -15 is:', abs(-15))
-
-
+_hex21 = hex(21)
+print('The hexadecimal value of 21 is:', _hex21)
+print(id(_hex21))
+print(eval('2 ^ 5'))
+print(round(3.75123))
+print(len('lyric' + 'marner'))
+print()
 # --------------- Section 2 --------------- #
 
 # 1 | Function Definitions no Parameters
@@ -43,6 +48,28 @@ print('The absolute value of -15 is:', abs(-15))
 #   1 - Call each function once.
 #
 # WRITE CODE BELOW
+
+def my_name():
+    print('Lyric Marner')
+
+my_name()
+print()
+
+def animals():
+    print('pandas')
+    print('turtles')
+    print('otters')
+
+animals()
+print()
+
+def odd_numbers():
+    print(9)
+    print(5)
+    print(7)
+
+odd_numbers()
+print()
 
 
 # 2 | Function Definitions with Parameters
@@ -71,3 +98,20 @@ print('The absolute value of -15 is:', abs(-15))
 #   2 - For the 3rd function, save the return value to a variable and print it.
 #
 # WRITE CODE BELOW
+def num_cubed(num):
+    print(f'{num} cubed is: {num ** 3}')
+
+num_cubed(3)  
+print()
+
+def sum_num(a,b,c):
+    print(a + b + c)
+
+sum_num(2, 7, 8)
+print()
+
+def string5():
+    print('this is a string! '*5)
+    return num_cubed(5)
+
+string5()
